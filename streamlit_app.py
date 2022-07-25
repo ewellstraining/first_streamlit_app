@@ -27,7 +27,7 @@ streamlit.dataframe(fruits_to_show)
 # New section to display FruityVice API response
 streamlit.header("Fruityvice Fruit Advice!")
 try:
-  fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')     # ask user for choice, default to kiwi 
+  fruit_choice = streamlit.text_input('What fruit would you like information about?')              # ask user for choice, no default
   if not fruit_choice:
     streamlit.error("Please select a fruit to get information.")
   else:
